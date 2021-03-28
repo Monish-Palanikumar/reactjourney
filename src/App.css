@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.container{
+  padding: 0 1rem;
+}
+.btn{
+  border: none;
+  cursor: pointer;
+  background: #282c34;
+  color:antiquewhite;
+  border-radius: 5px;
+}

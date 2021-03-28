@@ -1,0 +1,77 @@
+//TEMPLATE LITERAL
+let name = monish
+console.log(`I'm ${name}`)
+
+const func = (n) => {
+     console.log(n)
+}
+func(name)
+
+//CLASSES
+class Animal
+{
+     eat = () => {
+          console.log("eat")
+     }
+}
+class Dog extends Animal{
+     bark = () => {
+          console.log("bark")
+     }
+}
+
+puppy = new Dog()
+puppy.bark()
+puppy.eat()
+
+//SPREAD OPERATOR
+a=[1,2,3]
+b=[...a, 4]
+console.log(a) //1,2,3
+console.log(b) //1,2,3,4
+
+a={name:"monish", age:"22"}
+b={...a, ph:"1234567890"}
+console.log(b)
+
+const name = (...ag) => {
+     console.log(ag)
+     for(let i=0;i<ag.length;i++)
+     {
+          console.log(ag[i])
+     }
+}
+name("monish","aravind","sam")
+
+//DESTRUCTURING
+var a={name:"monish", age:"22"}
+var {name,age} = a
+// console.log(a.name)
+// console.log(a.age)
+console.log(name)
+console.log(age)
+
+//IMPORTS AND EXPORTS
+
+component1.js
+const apple = "apple"
+export default apple
+
+component2.js
+export const orange = "orange"
+export const banana = "banana"
+
+main.js
+import APPLE from ./component1.js
+//import {ORANGE as or, BANANA} from ./component2.js
+import * as fruits from ./component2.js
+console.log(APPLE)
+console.log(or)
+console.log(BANANA)
+console.log(fruits.banana)
+
+//MAP FUNCTION
+
+arr=[1,2,3]
+const plus2 = arr.map(num=>num+2)
+console.log(plus2) //[3,4,5]
