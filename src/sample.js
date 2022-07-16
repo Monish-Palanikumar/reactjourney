@@ -1,10 +1,10 @@
-// rafce->
-import React from 'react'
+import React,{useState} from 'react'
 
-const sample = () => {
+function sample() {
+     var [count, setCount] = useState(0)
      return (
           <div>
-               sample
+               <button onclick={()=> setCount(count+1)}>count {count}</button>
           </div>
      )
 }

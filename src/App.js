@@ -19,7 +19,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 // import Axios from 'axios'
-// import Simple from "./Simple"
+import Sample from "./sample"
 import Todos from "./Todos/Todos"
 import Add from "./Todos/Add"
 import './App.css';
@@ -89,7 +89,7 @@ export class App extends Component {
 			<Router>
 				<div>
 					{/* <Simple title="Task" name="monish" /> */}
-					<Route exact path="/" render={props => (
+					{/* <Route exact path="/" render={props => (
 						<React.Fragment>
 							<div className="container">
 								<Todos todos={this.state.todos} markComplete={this.markComplete} delTask={this.delTask} />
@@ -101,7 +101,8 @@ export class App extends Component {
 						<React.Fragment>
 							<About />
 						</React.Fragment>
-					)} />
+					)} /> */}
+					<Sample />
 				</div>
 			</Router >
 		)

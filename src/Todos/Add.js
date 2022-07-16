@@ -17,7 +17,7 @@ export class Add extends Component {
      render() {
           return (
 
-               <form onSubmit={this.onSubmit} style={{ display: 'flex' }}>
+               <form onSubmit={this.onSubmit} style={{ display: 'flex', margin:"30px", padding:"50px" }}>
                     <input
                          type="text"
                          name="title"
